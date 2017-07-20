@@ -11,8 +11,7 @@
     "require": {
         "php": "^7.0",
         "faustbrian/http": "^1.0@dev",
-        "somoza/oauth2-client-middleware": "^0.3.0",
-        "symfony/var-dumper": "^3.3"
+        "somoza/oauth2-client-middleware": "^0.3.0"
     },
     "require-dev": {
         "coderabbi/phpumoji": "^0.7.0@beta",
