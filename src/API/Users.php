@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Dribbble\API;
 
-use BrianFaust\Dribbble\Models\User;
 use BrianFaust\Http\HttpResponse;
+use BrianFaust\Dribbble\Models\User;
 
 class Users extends AbstractAPI
 {
