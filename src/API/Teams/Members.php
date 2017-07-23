@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Dribbble\API\Teams;
 
-use BrianFaust\Dribbble\API\AbstractAPI;
 use BrianFaust\Http\HttpResponse;
+use BrianFaust\Dribbble\API\AbstractAPI;
 
 class Members extends AbstractAPI
 {

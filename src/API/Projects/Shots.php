@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Dribbble\API\Projects;
 
-use BrianFaust\Dribbble\API\AbstractAPI;
 use BrianFaust\Http\HttpResponse;
+use BrianFaust\Dribbble\API\AbstractAPI;
 
 class Shots extends AbstractAPI
 {
