@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Dribbble\API\Users;
 
-use BrianFaust\Http\HttpResponse;
 use BrianFaust\Dribbble\API\AbstractAPI;
+use BrianFaust\Http\HttpResponse;
 
 class Likes extends AbstractAPI
 {

@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\Dribbble\API\Shots;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Dribbble\Models\Like;
 use BrianFaust\Dribbble\API\AbstractAPI;
+use BrianFaust\Dribbble\Models\Like;
+use BrianFaust\Http\HttpResponse;
 
 class Likes extends AbstractAPI
 {
