@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Dribbble PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Dribbble;
+namespace Plients\Dribbble;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -32,7 +32,7 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\Dribbble\API\AbstractAPI
+     * @return \Plients\Dribbble\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
@@ -40,7 +40,7 @@ class Client
 
         $client = Http::withBaseUri('https://api.dribbble.com/v1/')->withHandler($handler->create());
 
-        $class = "BrianFaust\\Dribbble\\API\\{$name}";
+        $class = "Plients\\Dribbble\\API\\{$name}";
 
         return new $class($client);
     }

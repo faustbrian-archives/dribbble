@@ -5,23 +5,23 @@ declare(strict_types=1);
 /*
  * This file is part of Dribbble PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Dribbble\API\Shots;
+namespace Plients\Dribbble\API\Shots;
 
-use BrianFaust\Dribbble\API\AbstractAPI;
-use BrianFaust\Http\HttpResponse;
+use Plients\Dribbble\API\AbstractAPI;
+use Plients\Http\HttpResponse;
 
 class Attachments extends AbstractAPI
 {
     /**
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function lists(int $id): HttpResponse
     {
@@ -32,7 +32,7 @@ class Attachments extends AbstractAPI
      * @param int    $shot
      * @param string $file
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(int $shot, string $file): HttpResponse
     {
@@ -43,7 +43,7 @@ class Attachments extends AbstractAPI
      * @param int $shot
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function details(int $shot, int $id): HttpResponse
     {
@@ -54,7 +54,7 @@ class Attachments extends AbstractAPI
      * @param int $shot
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function delete(int $shot, int $id): HttpResponse
     {

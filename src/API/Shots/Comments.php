@@ -5,23 +5,23 @@ declare(strict_types=1);
 /*
  * This file is part of Dribbble PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Dribbble\API\Shots;
+namespace Plients\Dribbble\API\Shots;
 
-use BrianFaust\Dribbble\API\AbstractAPI;
-use BrianFaust\Http\HttpResponse;
+use Plients\Dribbble\API\AbstractAPI;
+use Plients\Http\HttpResponse;
 
 class Comments extends AbstractAPI
 {
     /**
      * @param int $shot
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function lists(int $shot): HttpResponse
     {
@@ -32,7 +32,7 @@ class Comments extends AbstractAPI
      * @param int $shot
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function likes(int $shot, int $id): HttpResponse
     {
@@ -43,7 +43,7 @@ class Comments extends AbstractAPI
      * @param int    $shot
      * @param string $body
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(int $shot, string $body): HttpResponse
     {
@@ -54,7 +54,7 @@ class Comments extends AbstractAPI
      * @param int $shot
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function read(int $shot, int $id): HttpResponse
     {
@@ -66,7 +66,7 @@ class Comments extends AbstractAPI
      * @param int    $id
      * @param string $body
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function update(int $shot, int $id, string $body): HttpResponse
     {
@@ -76,7 +76,7 @@ class Comments extends AbstractAPI
     /**
      * @param int $shot
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function delete(int $shot): HttpResponse
     {
@@ -98,7 +98,7 @@ class Comments extends AbstractAPI
      * @param int $shot
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function like(int $shot, int $id): HttpResponse
     {
@@ -109,7 +109,7 @@ class Comments extends AbstractAPI
      * @param int $shot
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function unlike(int $shot, int $id): HttpResponse
     {

@@ -1,13 +1,19 @@
 {
-    "name": "faustbrian/dribbble-php-client",
+    "name": "plients/dribbble",
     "description": "A Dribbble Client for PHP",
-    "keywords": ["api", "http", "dribbble"],
+    "keywords": [
+        "api",
+        "http",
+        "dribbble"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "faustbrian/http": "^1.0",
@@ -19,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Dribbble\\": "src"
+            "Plients\\Dribbble\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Dribbble\\": "tests"
+            "Plients\\Tests\\Dribbble\\": "tests"
         }
     },
     "config": {

@@ -5,23 +5,23 @@ declare(strict_types=1);
 /*
  * This file is part of Dribbble PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Dribbble\API\Users;
+namespace Plients\Dribbble\API\Users;
 
-use BrianFaust\Dribbble\API\AbstractAPI;
-use BrianFaust\Http\HttpResponse;
+use Plients\Dribbble\API\AbstractAPI;
+use Plients\Http\HttpResponse;
 
 class Followers extends AbstractAPI
 {
     /**
      * @param int|string $user
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function followers($user): HttpResponse
     {
@@ -29,7 +29,7 @@ class Followers extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function authdFollowers(): HttpResponse
     {
@@ -39,7 +39,7 @@ class Followers extends AbstractAPI
     /**
      * @param int|string $user
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function following($user): HttpResponse
     {
@@ -47,7 +47,7 @@ class Followers extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function authdFollowing(): HttpResponse
     {
@@ -55,7 +55,7 @@ class Followers extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function shotsFollowing(): HttpResponse
     {
@@ -76,7 +76,7 @@ class Followers extends AbstractAPI
      * @param int|string $user
      * @param [type]     $target_user
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function haveRelationship($user, $target_user): HttpResponse
     {
@@ -86,7 +86,7 @@ class Followers extends AbstractAPI
     /**
      * @param int|string $user
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function follow($user): HttpResponse
     {
@@ -96,7 +96,7 @@ class Followers extends AbstractAPI
     /**
      * @param int|string $user
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function unfollow($user): HttpResponse
     {

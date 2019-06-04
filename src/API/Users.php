@@ -5,23 +5,23 @@ declare(strict_types=1);
 /*
  * This file is part of Dribbble PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Dribbble\API;
+namespace Plients\Dribbble\API;
 
-use BrianFaust\Dribbble\Models\User;
-use BrianFaust\Http\HttpResponse;
+use Plients\Dribbble\Models\User;
+use Plients\Http\HttpResponse;
 
 class Users extends AbstractAPI
 {
     /**
      * @param int|string $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function details($id): HttpResponse
     {
@@ -29,7 +29,7 @@ class Users extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function authd(): HttpResponse
     {

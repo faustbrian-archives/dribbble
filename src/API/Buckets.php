@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Dribbble PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Dribbble\API;
+namespace Plients\Dribbble\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Buckets extends AbstractAPI
 {
     /**
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function details(int $id): HttpResponse
     {
@@ -32,7 +32,7 @@ class Buckets extends AbstractAPI
      * @param string $name
      * @param array  $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function create(int $id, string $name, array $parameters = []): HttpResponse
     {
@@ -44,7 +44,7 @@ class Buckets extends AbstractAPI
      * @param string $name
      * @param array  $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function update(int $id, string $name, array $parameters = []): HttpResponse
     {
@@ -54,7 +54,7 @@ class Buckets extends AbstractAPI
     /**
      * @param int $id
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function delete(int $id): HttpResponse
     {
